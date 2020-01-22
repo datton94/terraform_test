@@ -24,7 +24,7 @@ variable "EC2_USER" {
 
 variable "PUBLIC_KEY_PATH" {
   type    = string
-  default = "~/terraform/ap_southeast_1_key_pair.pub"
+  default = "../../ap_southeast_1_key_pair.pub"
 }
 
 variable "PRIVATE_KEY_PATH" {
