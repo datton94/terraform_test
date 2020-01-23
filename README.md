@@ -11,6 +11,7 @@ Run these commands:
 export ANSIBLE_HOST_KEY_CHECKING=False
 sudo chmod 600 ../ap_southeast_1_key_pair
 terraform init
+Enter the aws_access_key and aws_secret_key in main.tf
 terraform plan -out terraform
 terraform apply terraform
 
