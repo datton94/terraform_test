@@ -1,10 +1,9 @@
-Requirement:
-+ Your local host: 
-	- Terraform
-	- Ansible
+<h3>Requirement:</h3>
+
+ Your local host: Terraform, Ansible
 
 
-To run this Terraform please go to terraform/dev/
+<b>To run this Terraform please go to terraform/dev/</b>
 
 Enter the aws_access_key and aws_secret_key in main.tf
 
@@ -23,7 +22,7 @@ terraform apply terraform
 -----------------------------------------------------------
 Then you access to the public ip of EC2 instance by port 80
 
-Run this command to get the public ip: terraform show | grep public_ip | sed -n 2p | awk '{gsub("\"","");print $3}'
+Run this command to get the public ip: terraform show | grep public_ip | sed -n 2p | awk '{gsub("\\"","");print $3}'
 
 
 You can access to EC2 instance with username: ec2-user
