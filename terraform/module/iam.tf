@@ -3,7 +3,7 @@ data "aws_iam_policy" "ReadOnlyAccess" {
 }
 
 resource "aws_iam_instance_profile" "test_profile" {
-  name = "test_profile"
+  name = "test_ec2_profile"
   role = aws_iam_role.role.name
 }
 
